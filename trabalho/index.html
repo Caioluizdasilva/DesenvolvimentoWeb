@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de trocedor</title>
+</head>
+<body>
+<main>
+    <div class="card-name">
+        <form id="formData" name="formData" method="post" action="trabalho.php">
+            <h1>Controle de trocedores:</h1>
+            <div class="card-flex">
+                <div class="card">
+                    <label class="inputTitles" for="formName">Nome: </label> 
+                    <input id="formName" name="formName" type="text">
+                    <form action="trabalho.php" method="post"> <br><BR>
+
+                        <label class="inputTitles" for="formEmail">E-mail: </label>
+                        <input id="formEmail" name="formEmail" type="email"> <br><BR>
+                        <label class="inputTitles" for="formCell">Telefone: </label>
+                        <input id="formTel" name="formTel" type="tel" maxlength="15"
+                               placeholder="(22) 99999-9999"> <br><BR>
+                    
+                        <B>Escolha o seu time:</B><br>
+                        <input type=checkbox name="time[]" value=Vasco> Vasco<br>
+                        <input type=checkbox name="time[]" value=Flamengo> Flamengo <br>
+                        <input type=checkbox name="time[]" value=Fluminence> Fluminense<br>
+                        <input type=checkbox name="time[]" value=São_Paulo> São Paulo<br>
+                        <input type=checkbox name="time[]" value=Bahia> Bahia<br>
+                        <input type=checkbox name="time[]" value=Palmeiras> Palmeiras<br>
+                        <input type=checkbox name="time[]" value=Atletico> Atlético Mineiro<br>
+                        <input type=checkbox name="time[]" value=Corinthias> Corinthias </B><br><BR>
+                        </form> <br><BR>
+                
+
+                </div>
+                <div class="card">
+                    <label class="inputTitles" for="formCoutry">País: </label>
+                    <input id="formCoutry" name="formCoutry" type="text">
+                </div>
+            </div>
+            <div class="card-flex">
+                <div class="card">
+                    <label class="inputTitles" for="formstade">Estado: </label>
+                    <input id="formstade" name="formstade" type="text">
+                </div>
+                <div class="card">
+                    <label class="inputTitles" for="formCity">Cidade: </label>
+                    <input id="formCity" name="formCity" type="text">
+                </div>
+            </div>
+            <div class="card-flex">
+                <div class="card">
+                    <label class="inputTitles" for="formSocio">É sócio-trocedor?: </label>
+                    <input id="formSocio" name="formSocio" type="text">
+                </div>
+                <div class="card">
+                    <input id="formSubmit" name="formSubmit" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
