@@ -1,3 +1,4 @@
+// Um fecth usa método GET por default. Por isso não precisamos explicitar
 fetch("../controller/generoListar.php")
     .then(function (response) {
         if(response.ok !== true) {
@@ -12,7 +13,7 @@ fetch("../controller/generoListar.php")
     .catch(function (erro) {
         document.querySelector('#msgErro').textContent = erro;
     })
-
+// Função de callback
 function cbSucessoListarGenero(responseJSON) {
     montarTabela(responseJSON.dados);
 }
